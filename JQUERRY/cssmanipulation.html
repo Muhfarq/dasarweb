@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="cssManipulation.css">
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Ketika dokumen selesai dimuat
+            $("h1, h2, p").addClass("blue"); // Tambahkan kelas "blue" ke semua elemen h1, h2, dan p
+            $("div").addClass("important"); // Tambahkan kelas "important" ke semua elemen div
+
+            $(".btn1").click(function() {
+                // Ketika tombol dengan kelas "btn1" diklik
+                $("h1, h2, p").removeClass("blue"); // Hapus kelas "blue" dari semua elemen h1, h2, dan p
+            });
+
+            $(".btn2").click(function() {
+                // Ketika tombol dengan kelas "btn2" diklik
+                $("h1, h2, p, div").css({
+                    "background-color": "yellow",
+                    "font-size": "100%"
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <div>This is some important text!</div>
+    <button class="btn1">Add classes to elements</button>
+    <button class="btn2">Set classes to elements</button>
+</body>
+</html>
