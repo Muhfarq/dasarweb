@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script src="jquery-3.7.1.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("Button").click(function () { 
+                    $("#box").load("/dasarweb/JQUERRY/testContent.html")
+                    
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Tutorial AJAX sederhana</h1>
+        <p id="hint">Tutorial Fungsi</p>
+        <p><img src="img/img (2).jpg"></p>
+
+        <div id="box">
+            <h2>klik tombol dibawah untuk menampilkan konten</h2>
+        </div>
+        <button type="button">Klik saya</button>
+        
+    </body>
+</html>
